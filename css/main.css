@@ -1,11 +1,194 @@
 /* Inserta tu codigo aqui */
 
 /* Responsive */
+*{
+	
+	box-sizing: border-box;
+
+}
+section{
+	background: #2d2735;
+}
+/*---------HEADER-------------*/
+header{
+	background:#1b1821;
+}
+.list-nav li{
+	list-style: none;
+	margin:7px;
+	display: inline-block;
+	font-family: 'Open Sans';
+  	font-style: italic;
+  	color:white;
+  	margin-right: 20px;
+}
+.list-nav{
+	float:right;
+	margin-right: 40px;
+}
+
+header img{
+	width: 20%;
+	margin-left: 40px;
+}
+/*------fin styles header------------*/
+/*---------HERO----------*/
+.img-fondo{
+	background: url(../image/header-image.jpg)no-repeat;
+	background-size: cover;
+	height: 450px;
+	position: relative;
+}
+.info h1{
+	color:#fbb961;
+	font-family: 'Courgette';
+	font-size: 65px;
+}
+.info h3{
+	color:white;
+	font-family: 'Courgette';
+	font-size: 15px;
+}
+.centrar{
+	vertical-align:middle;
+	display:table-cell;
+}
+
+.info{
+	background-color: #1b1821;
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	text-align:center; 
+    display:table;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*--------GALLERY--------------*/
+.img-gallery .content-image{
+	display: inline-block;
+	margin:10px;
+}
+.content-image
+{
+	background:#1b1821; 
+}
+.content-image h4{
+	color: #f4bb6a;
+	font-family: 'Courgette';
+}
+
+.content-image p{
+	font-family: 'Courgette';
+	color:white;
+}
+/**/
+
+.mult-image h4{
+	color: #f4bb6a;
+	font-family: 'Courgette';
+}
+
+.mult-image p{
+	font-family: 'Courgette';
+	color:white;
+}
+.mult-image span{
+	font-family: sans-serif;
+	color:white;
+}
+.mult-video{
+	font-family: sans-serif;
+	color: white;
+}
+.img-video{
+	margin-left: 1px;
+}
+.container .c{
+	display: inline-block;
+	vertical-align: top;
+	
+}
+.personal{
+	margin-left: 40px;
+}
+input{
+	background-color: #2d2735;
+	color: white;
+	border:1px solid  #2d2735;
+	height: 40px;
+	margin: 0 auto;
+	width: 400px;
+	padding-left: 15px;
+}
+.buscar{
+	background-color: #1b1821;
+	height: 90px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+}
+.datos-person
+{
+	width: 450px;
+}
+.datos-person h4{
+	color:white;
+	font-family: sans-serif;
+}
+.datos-person p{
+	color:white;
+	font-family: sans-serif;
+}
+.multimedia, .gallery{
+	padding-top: 40px;
+}
+.c p{
+	width: 600px;
+	font-family: sans-serif;
+}
+.c .inf-amand{
+	width: 450px;
+}
 
 @media screen and (max-width : 920px) {
+	.container,ul,p
+	{
+		width: 100%;
+	}
 
+	.c .personal{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 600px) {
-
+.container,ul,p
+	{
+		width: 80%;
+	}
+	section
+	{
+		width: 100%;
+	}
+	.hero{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+	}
+	.c .personal{
+		display: none;
+	}
+	
+	.multimedia img{
+		width: 20%;
+	}
+	img{
+		width:50%;
+	}
 }
